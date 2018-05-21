@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2B1408C1-BEC2-41F0-B101-953891E595C0}</ProjectGuid>
+    <ProjectGuid>{9EDF2B8D-853F-4796-A396-58972A7B0DA5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ADOToolbox</RootNamespace>
-    <AssemblyName>ADOToolbox</AssemblyName>
+    <RootNamespace>Patterns</RootNamespace>
+    <AssemblyName>Patterns</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,11 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\DataBase\Command.cs" />
-    <Compile Include="DataAccess\DataBase\Connection.cs" />
-    <Compile Include="DataAccess\DataBase\IConnection.cs" />
-    <Compile Include="DataAccess\Repository\IRepository.cs" />
+    <Compile Include="IOC\ISimpleIOC.cs" />
+    <Compile Include="IOC\SimpleIOC.cs" />
+    <Compile Include="Locator\LocatorBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IDataService.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
